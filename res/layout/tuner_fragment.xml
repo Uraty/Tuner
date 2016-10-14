@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop = "20dp"
+    android:paddingBottom="20dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="C\n0hz"
+                android:id="@+id/topNote"
+                android:textSize="@dimen/textSize"
+                android:layout_alignRight="@+id/bottomNote"
+                android:textColor="#ffffff"
+                android:gravity="right" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="A\n440hz"
+                android:id="@+id/bottomNote"
+                android:textSize="@dimen/textSize"
+                android:layout_alignParentBottom="true"
+                android:textColor="#ffffff"
+                android:gravity="right" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="400hz"
+            android:id="@+id/curNote"
+            android:textSize="@dimen/textSize"
+            android:paddingLeft="40dp"
+            android:layout_toRightOf="@+id/main"
+            android:textColor="#ffffff"/>
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="#d0d1e6"
+            android:layout_toRightOf="@+id/main"/>
+    </RelativeLayout>
+
+</RelativeLayout>
